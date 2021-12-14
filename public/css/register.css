@@ -1,0 +1,40 @@
+.controladorinput{
+    position: relative;
+    width: 100%;
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+.iteminput{
+    width: 100%;
+    height: 100%;
+    padding-left: .5rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+
+}
+.iteminput:focus{
+    border: 1px solid var(--color-Celeste)
+}
+.contenedor{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+   /*  flex-direction: column; */
+    justify-content: center;
+
+}
+.registro{
+    width: 100%;
+}
+.registrotitulo{
+    width: 100%;
+}
+.registroform{
+    width: 100%;
+}
+.botonform:hover{
+    background-color: #0022AA;
+    color:white;
+}

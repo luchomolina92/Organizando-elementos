@@ -1,0 +1,216 @@
+header{
+    background-color: var(--color-amarillo) ;
+    padding: 1rem;
+}
+ul{
+    font-size: 12px;
+}
+.titulares{
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+}
+.precios{
+    font-size: 18px;
+}
+.descuentos{
+    font-size: 16px;
+    color: var(--color-Verde);
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+
+}
+.navbar ul{
+display: flex;
+padding-left: 0;
+} 
+.navbar li:not(:last-child ){
+    margin-right: 8px;
+}
+.descripcion{
+    font-size: 16px;
+    color: var(--color-Grisoscuro);
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    opacity: 0; 
+    cursor: pointer;
+}
+.descripcion:hover{
+    opacity: 1;
+
+}
+footer article{
+text-align: center;
+}
+footer i{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.burger-menu{
+    display: flex;
+align-items: center;
+justify-content: center;
+background-color: var(--color-Celeste);
+width: 30px;
+height: 33px;
+border-radius:5px;
+margin-right: auto;
+margin-left: auto;
+}
+
+header p {
+    display: flex;
+align-items: center;
+justify-content: center;
+padding:16px;
+}
+header img{
+    width: 40%;
+
+}
+header ul{
+    list-style: none;
+}
+main {
+    width: 90vw;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.productos{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap:wrap;
+ 
+}
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.controllogo{
+    width: 50%;
+    padding-right: 10px;
+
+}
+.controllogo img{
+    width: 100%;
+}
+.controllupa{
+    width: 50%;
+    position: relative;
+    height: 2rem;
+}
+.controlmensaje{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.inputlupa{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border:none;
+}
+.botonlupa{
+position: absolute;
+height: 100%;
+right: 0;
+top:0;
+background-color: transparent;
+border-radius: 0 5px 5px 0;
+border:none;
+}
+.detalle{
+ position: relative;
+ padding-left: 15px ;
+ padding-top: 15px;
+ border-top: 1px solid #ebebeb;
+ display: flex;
+
+}
+.detalle .precios{
+width: 30%;
+}
+.detalle .descuentos{
+    width: 70%;
+}
+body{
+    background-color: #ebebeb;
+}
+.producto{
+    background-color: #fff ;
+    margin-bottom: 10px;
+   
+}
+.camioncito{
+    position: absolute;
+    top: -1.4rem;
+    right: 1rem;
+    padding: .8em;
+    width: min-content;
+    font-size: 1rem;
+    color: var(--color-Verde);
+    background-color: #fff;
+    border: 1px solid var(--color-Verde);
+    border-radius: 50%;
+    transition: transform .5s ease-in-out;
+}
+.camioncito:hover{
+    transform: rotateZ(360deg);
+
+}
+.contenedorfooter{
+    display: flex;
+    margin-top: 2rem;
+}
+.sugerencias{
+    padding: 1rem;
+}
+.titulosugerencias{
+ color: #0022AA;
+}
+@media screen and (min-width: 361px) {
+    .producto{
+         width: calc(50% - 1rem);
+         margin-left: auto; 
+         margin-right: auto;
+    }
+    .producto:hover{
+        box-shadow:0 0 10px rgb(100,100,100)
+    }
+   .burger-menu{
+        display: none;
+    }
+    .controllogo{
+        width: 33%;
+     }
+     .controlmensaje{
+         width: 33%;
+     }
+     .controllupa{
+         width: 33%;
+     }
+}
+@media screen and (max-width: 360px) {
+    .descripcion{
+        display: none;
+    }
+   .navbar{
+    display: none;
+   }
+}
+@media screen and (min-width: 769px){
+    .producto{
+        width: calc(25% - 1rem);
+
+    }
+    
+}
+
